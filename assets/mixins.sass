@@ -1,0 +1,125 @@
+=flexCenter
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+=pageWrapper
+  margin: 0 auto
+  // margin-top: 2.5em
+  animation: $pageFade
+  // max-width: 100em
+  min-height: 98vh
+  color: white
+=elements
+  &[data-number="1"], &[data-number="3"], &[data-number="11"], &[data-number="19"], &[data-number="55"], &[data-number="87"]
+    grid-column: 1
+  &[data-number="4"], &[data-number="12"], &[data-number="20"], &[data-number="38"], &[data-number="56"], &[data-number="88"]
+    grid-column: 2
+  &[data-number="21"], &[data-number="39"]
+    grid-column: 3
+  &[data-number="22"], &[data-number="40"], &[data-number="72"], &[data-number="104"], &[data-number="57"], &[data-number="89"]
+    grid-column: 4
+  &[data-number="23"], &[data-number="41"], &[data-number="73"], &[data-number="105"], &[data-number="58"], &[data-number="90"]
+    grid-column: 5
+  &[data-number="24"], &[data-number="42"], &[data-number="74"], &[data-number="106"], &[data-number="59"], &[data-number="91"]
+    grid-column: 6
+  &[data-number="25"], &[data-number="43"], &[data-number="75"], &[data-number="107"], &[data-number="60"], &[data-number="92"]
+    grid-column: 7
+  &[data-number="26"], &[data-number="44"], &[data-number="76"], &[data-number="108"], &[data-number="61"], &[data-number="93"]
+    grid-column: 8
+  &[data-number="27"], &[data-number="45"], &[data-number="77"], &[data-number="109"], &[data-number="62"], &[data-number="94"]
+    grid-column: 9
+  &[data-number="28"], &[data-number="46"], &[data-number="78"], &[data-number="110"], &[data-number="63"], &[data-number="95"]
+    grid-column: 10
+  &[data-number="29"], &[data-number="47"], &[data-number="79"], &[data-number="111"], &[data-number="64"], &[data-number="96"]
+    grid-column: 11
+  &[data-number="30"], &[data-number="48"], &[data-number="80"], &[data-number="112"], &[data-number="65"], &[data-number="97"]
+    grid-column: 12
+  &[data-number="5"], &[data-number="13"], &[data-number="31"], &[data-number="49"], &[data-number="81"], &[data-number="113"], &[data-number="66"], &[data-number="98"]
+    grid-column: 13
+  &[data-number="6"], &[data-number="14"], &[data-number="32"], &[data-number="50"], &[data-number="82"], &[data-number="114"], &[data-number="67"], &[data-number="99"]
+    grid-column: 14
+  &[data-number="7"], &[data-number="15"], &[data-number="33"], &[data-number="51"], &[data-number="83"], &[data-number="115"], &[data-number="68"], &[data-number="100"]
+    grid-column: 15
+  &[data-number="8"], &[data-number="16"], &[data-number="34"], &[data-number="52"], &[data-number="84"], &[data-number="116"], &[data-number="69"], &[data-number="101"]
+    grid-column: 16
+  &[data-number="9"], &[data-number="17"], &[data-number="35"], &[data-number="53"], &[data-number="85"], &[data-number="117"], &[data-number="70"], &[data-number="102"]
+    grid-column: 17
+  &[data-number="2"], &[data-number="10"], &[data-number="18"], &[data-number="36"], &[data-number="54"], &[data-number="86"], &[data-number="118"], &[data-number="71"], &[data-number="103"]
+    grid-column: 18
+  &[data-number="1"], &[data-number="2"]
+    grid-row: 1
+  &[data-number="3"], &[data-number="4"], &[data-number="5"], &[data-number="6"], &[data-number="7"], &[data-number="8"], &[data-number="9"], &[data-number="10"]
+    grid-row: 2
+  &[data-number="11"], &[data-number="12"], &[data-number="13"], &[data-number="14"], &[data-number="15"], &[data-number="16"], &[data-number="17"], &[data-number="18"]
+    grid-row: 3
+  &[data-number="19"], &[data-number="20"], &[data-number="21"], &[data-number="22"], &[data-number="23"], &[data-number="24"], &[data-number="25"], &[data-number="26"], &[data-number="27"], &[data-number="28"], &[data-number="29"], &[data-number="30"], &[data-number="31"], &[data-number="32"], &[data-number="33"], &[data-number="34"], &[data-number="35"], &[data-number="36"]
+    grid-row: 4
+  &[data-number="37"], &[data-number="38"], &[data-number="39"], &[data-number="40"], &[data-number="41"], &[data-number="42"], &[data-number="43"], &[data-number="44"], &[data-number="45"], &[data-number="46"], &[data-number="47"], &[data-number="48"], &[data-number="49"], &[data-number="50"], &[data-number="51"], &[data-number="52"], &[data-number="53"], &[data-number="54"]
+    grid-row: 5
+  &[data-number="55"], &[data-number="56"], &[data-number="72"], &[data-number="73"], &[data-number="74"], &[data-number="75"], &[data-number="76"], &[data-number="77"], &[data-number="78"], &[data-number="79"], &[data-number="80"], &[data-number="81"], &[data-number="82"], &[data-number="83"], &[data-number="84"], &[data-number="85"], &[data-number="86"]
+    grid-row: 6
+  &[data-number="87"], &[data-number="88"], &[data-number="104"], &[data-number="105"], &[data-number="106"], &[data-number="107"], &[data-number="108"], &[data-number="109"], &[data-number="110"], &[data-number="111"], &[data-number="112"], &[data-number="113"], &[data-number="114"], &[data-number="115"], &[data-number="116"], &[data-number="117"], &[data-number="118"]
+    grid-row: 7
+  &[data-number="57"], &[data-number="58"], &[data-number="59"], &[data-number="60"], &[data-number="61"], &[data-number="62"], &[data-number="63"], &[data-number="64"], &[data-number="65"], &[data-number="66"], &[data-number="67"], &[data-number="68"], &[data-number="69"], &[data-number="70"], &[data-number="71"]
+    grid-row: 9
+  &[data-number="89"], &[data-number="90"], &[data-number="91"], &[data-number="92"], &[data-number="93"], &[data-number="94"], &[data-number="95"], &[data-number="96"], &[data-number="97"], &[data-number="98"], &[data-number="99"], &[data-number="100"], &[data-number="101"], &[data-number="102"], &[data-number="103"]
+    grid-row: 10
+=properties
+  &[data-group="Reactive Nonmetal"]
+    background: #F0FE8F
+  &[data-group="Alkali Metal"]
+    background: #F76666
+  &[data-group="Alkaline Earth Metal"]
+    background: #FCDEAD
+  &[data-group="Metalloid"]
+    background: #CCCB99
+  &[data-group="Lanthanide"]
+    background: #FBBFFF
+  &[data-group="Actinide"]
+    background: #F999CB
+  &[data-group="Noble Gas"]
+    background: #C0FFFF
+  &[data-group="Post-Transition Metal"]
+    background: #CCCCCC
+  &[data-group="Transition Metal"]
+    background: #FBC0C0
+  &[data-group="Unknown Chemical Properties"]
+    background: #E8E8E8
+  &[data-standardState="gas"]
+    .element-number
+      color: red
+    &.list-item
+      color: red
+    .symbol
+      color: red
+  &[data-standardState="solid"]
+    .element-number
+      color: black
+    &.list-item
+      color: black
+    .symbol
+      color: black
+  &[data-standardState="liquid"]
+    .element-number
+      color: blue
+    &.list-item
+      color: blue
+    .symbol
+      color: blue
+  &[data-standardState="unknown"]
+    .element-number
+      color: green
+    &.list-item
+      color: green
+    .symbol
+      color: green
+  &[data-occurrence="primordial"]
+    border-top: 0.15em solid rgba(darken(black, 20), 1)
+    border-bottom: 0.15em solid rgba(darken(black, 20), 1)
+  &[data-occurrence="from decay"]
+    border-top: 0.15em dashed rgba(darken(black, 20), 1)
+    border-bottom: 0.15em dashed rgba(darken(black, 20), 1)
+  &[data-occurrence="synthetic"]
+    border-top: 0.15em dotted rgba(darken(black, 20), 1)
+    border-bottom: 0.15em dotted rgba(darken(black, 20), 1)
