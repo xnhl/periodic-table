@@ -21,8 +21,8 @@ export default {
 	data() {return {count: 0}},
 	methods: {
 		showInfo: function(e) {
-			const { number, name, symbol, phase, group, standardState, occurrence, appearance, source, summary, atomic_mass, shells } = this.info;
-			const wiki_appearance = this.info.wiki_info.info.appearance;
+			const { number, name, symbol, phase, group, standardState, occurrence, appearance, source, summary, atomic_mass, shells } = this.info
+			const wiki_appearance = this.info.wiki_info.info.appearance
 			let newObj = {
 				number, 
 				name,
@@ -41,15 +41,15 @@ export default {
 			this.$emit("element-hovered", newObj)
 		},
 		showOne: function(e) {
-			let elements = [...document.getElementsByClassName("element")];
-			let alreadySelected = e.target.closest(".element").classList.contains("active") ? true : false;
-			elements.forEach(element => element.classList.remove("active"));
+			let elements = [...document.getElementsByClassName("element")]
+			let alreadySelected = e.target.closest(".element").classList.contains("active") ? true : false
+			elements.forEach(element => element.classList.remove("active"))
 			if (!alreadySelected) {
 				e.target.closest(".element").classList.add("active")
 			}
-			elements.forEach(element => element.classList.remove("unselected"));
-			const { number, name, symbol, phase, group, standardState, occurrence, appearance, source, summary, atomic_mass, shells } = this.info;
-			const wiki_appearance = this.info.wiki_info.info.appearance;
+			elements.forEach(element => element.classList.remove("unselected"))
+			const { number, name, symbol, phase, group, standardState, occurrence, appearance, source, summary, atomic_mass, shells } = this.info
+			const wiki_appearance = this.info.wiki_info.info.appearance
 			let newObj = {
 				number, 
 				name,
@@ -75,7 +75,7 @@ export default {
 	},
 	watch: {
 		temperature: function() {
-			const { meltingPointK, meltingPointC, meltingPointF, boilingPointK, boilingPointC, boilingPointF } = this.info.wiki_info.info;
+			const { meltingPointK, meltingPointC, meltingPointF, boilingPointK, boilingPointC, boilingPointF } = this.info.wiki_info.info
 			
 		}
 	}

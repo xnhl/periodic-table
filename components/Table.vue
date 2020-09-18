@@ -32,14 +32,14 @@ export default {
 			}
 		},
 		showSingle: function(e) {
-			this.singleInfo = e;
-			let currentElement = e.number;
+			this.singleInfo = e
+			let currentElement = e.number
 			if (currentElement == this.lastElementClicked) {
-				this.paused = false;
+				this.paused = false
 			} else {
-				this.paused = true;
+				this.paused = true
 			}
-			this.lastElementClicked = e.number;
+			this.lastElementClicked = e.number
 		}
 	},
 	computed: {},

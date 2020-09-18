@@ -30,16 +30,16 @@ export default {
 			return ((parseFloat(this.info.atomic_mass) * 100) / 100).toFixed(2)
 		},
 		summary: function() {
-			let len = this.info.summary.length;
+			let len = this.info.summary.length
 			if (len > 425) {
-				let newSummary = this.info.summary.substring(0, 480);
+				let newSummary = this.info.summary.substring(0, 480)
 				return `${newSummary}...`
 			} else return this.info.summary
 		},
 		occurs: function() {
 			if (this.info.occurence) {
-				let first = this.info.occurence.substring(0, 1).toUpperCase();
-				let rest = this.info.occurence.substring(1);
+				let first = this.info.occurence.substring(0, 1).toUpperCase()
+				let rest = this.info.occurence.substring(1)
 				return `${first}${rest}`
 			}
 		}

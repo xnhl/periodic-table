@@ -66,73 +66,73 @@ export default {
 	},
 	methods: {
 		filterOccurrence: function(e) {
-			let which = e.target.dataset.content.replace(/[^a-z]/gi, "").toLowerCase();
-			this.filters[which]++;
-			e.target.classList.toggle("active");
-			let listItems = [...document.getElementsByClassName("list-item")];
-			listItems.forEach(item => item.classList.remove("active"));
-			let all = [...document.getElementsByClassName("element")];
+			let which = e.target.dataset.content.replace(/[^a-z]/gi, "").toLowerCase()
+			this.filters[which]++
+			e.target.classList.toggle("active")
+			let listItems = [...document.getElementsByClassName("list-item")]
+			listItems.forEach(item => item.classList.remove("active"))
+			let all = [...document.getElementsByClassName("element")]
 			if (this.filters[which] % 2 == 0) {
-				all.forEach(element => element.classList.remove("unselected"));
+				all.forEach(element => element.classList.remove("unselected"))
 			} else {
-				e.target.classList.add("active");
-				let currentCount = this.filters[which];
-				let prop = e.target.dataset.occurrence;
-				all.forEach(element => element.classList.remove("unselected"));
-				let unselected = all.filter(element => element.dataset.occurrence !== prop);
+				e.target.classList.add("active")
+				let currentCount = this.filters[which]
+				let prop = e.target.dataset.occurrence
+				all.forEach(element => element.classList.remove("unselected"))
+				let unselected = all.filter(element => element.dataset.occurrence !== prop)
 				unselected.forEach(element => element.classList.add("unselected"))
 			}
-			let currentCount = this.filters[which];
+			let currentCount = this.filters[which]
 			for (let filter in this.filters) {
 				this.filters[filter] = 0
 			}
-			this.filters[which] = currentCount;
+			this.filters[which] = currentCount
 		},
 		filterState: function(e) {
-			let which = e.target.dataset.content.replace(/[^a-z]/gi, "").toLowerCase();
-			this.filters[which]++;
-			e.target.classList.toggle("active");
-			let listItems = [...document.getElementsByClassName("list-item")];
-			listItems.forEach(item => item.classList.remove("active"));
-			let all = [...document.getElementsByClassName("element")];
+			let which = e.target.dataset.content.replace(/[^a-z]/gi, "").toLowerCase()
+			this.filters[which]++
+			e.target.classList.toggle("active")
+			let listItems = [...document.getElementsByClassName("list-item")]
+			listItems.forEach(item => item.classList.remove("active"))
+			let all = [...document.getElementsByClassName("element")]
 			if (this.filters[which] % 2 == 0) {
-				all.forEach(element => element.classList.remove("unselected"));
+				all.forEach(element => element.classList.remove("unselected"))
 			} else {
-				e.target.classList.add("active");
-				let currentCount = this.filters[which];
-				let prop = e.target.dataset.standardstate;
-				all.forEach(element => element.classList.remove("unselected"));
-				let unselected = all.filter(element => element.dataset.standardstate !== prop);
+				e.target.classList.add("active")
+				let currentCount = this.filters[which]
+				let prop = e.target.dataset.standardstate
+				all.forEach(element => element.classList.remove("unselected"))
+				let unselected = all.filter(element => element.dataset.standardstate !== prop)
 				unselected.forEach(element => element.classList.add("unselected"))
 			}
-			let currentCount = this.filters[which];
+			let currentCount = this.filters[which]
 			for (let filter in this.filters) {
 				this.filters[filter] = 0
 			}
-			this.filters[which] = currentCount;
+			this.filters[which] = currentCount
 		},
 		filterGroup: function(e) {
-			let which = e.target.dataset.content.replace(/[^a-z]/gi, "").toLowerCase();
-			this.filters[which]++;
-			e.target.classList.toggle("active");
-			let listItems = [...document.getElementsByClassName("list-item")];
-			listItems.forEach(item => item.classList.remove("active"));
-			let all = [...document.getElementsByClassName("element")];
+			let which = e.target.dataset.content.replace(/[^a-z]/gi, "").toLowerCase()
+			this.filters[which]++
+			e.target.classList.toggle("active")
+			let listItems = [...document.getElementsByClassName("list-item")]
+			listItems.forEach(item => item.classList.remove("active"))
+			let all = [...document.getElementsByClassName("element")]
 			if (this.filters[which] % 2 == 0) {
-				all.forEach(element => element.classList.remove("unselected"));
+				all.forEach(element => element.classList.remove("unselected"))
 			} else {
-				e.target.classList.add("active");
-				let currentCount = this.filters[which];
-				let prop = e.target.dataset.group;
-				all.forEach(element => element.classList.remove("unselected"));
-				let unselected = all.filter(element => element.dataset.group !== prop);
+				e.target.classList.add("active")
+				let currentCount = this.filters[which]
+				let prop = e.target.dataset.group
+				all.forEach(element => element.classList.remove("unselected"))
+				let unselected = all.filter(element => element.dataset.group !== prop)
 				unselected.forEach(element => element.classList.add("unselected"))
 			}
-			let currentCount = this.filters[which];
+			let currentCount = this.filters[which]
 			for (let filter in this.filters) {
 				this.filters[filter] = 0
 			}
-			this.filters[which] = currentCount;
+			this.filters[which] = currentCount
 		},
 	},
 	computed: {}
